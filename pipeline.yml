@@ -23,6 +23,8 @@ resources:
   source:
     uri: https://supermarioworld.visualstudio.com/image-pipeline/image-pipeline%20Team/_git/image-secret
     branch: master
+    username: ((vsts-user))
+    password: ((vsts-secret))
 
 - name: image-concourse-pipeline
   type: git
