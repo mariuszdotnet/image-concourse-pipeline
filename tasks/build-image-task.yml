@@ -8,6 +8,7 @@ image_resource:
     tag: light
 
 inputs:
+  - name: image-rhel7
   - name: image-concourse-pipeline
 
 run:
