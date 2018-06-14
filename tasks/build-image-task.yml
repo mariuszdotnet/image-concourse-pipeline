@@ -11,6 +11,6 @@ inputs:
   - name: image-rhel7
 
 run:
-  #path: ./packer-build-tasks/packer-win-vhd-build.sh
-  path: ls
-  args: [-al]
+  path: ./image-concourse-pipeline/tasks/build-image-task.sh
+  #path: ls
+  #args: [-al]
