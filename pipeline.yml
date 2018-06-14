@@ -6,6 +6,24 @@ resources:
     uri: https://github.com/mariuszdotnet/image-rhel7
     branch: master
 
+- name: image-artifact
+  type: git
+  source:
+    uri: https://github.com/mariuszdotnet/image-artifact
+    branch: master
+
+- name: image-configuration
+  type: git
+  source:
+    uri: https://github.com/mariuszdotnet/image-configuration
+    branch: master
+
+- name: image-secret
+  type: git
+  source:
+    uri: https://supermarioworld.visualstudio.com/image-pipeline/image-pipeline%20Team/_git/image-secret
+    branch: master
+
 - name: image-concourse-pipeline
   type: git
   source:
