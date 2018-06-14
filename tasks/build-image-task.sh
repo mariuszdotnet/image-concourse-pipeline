@@ -6,3 +6,5 @@ ls -al
 packer -v
 cd image-concourse-pipeline
 ls -al
+cd tasks
+ls -al
