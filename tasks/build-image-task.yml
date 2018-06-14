@@ -12,6 +12,6 @@ inputs:
   - name: image-concourse-pipeline
 
 run:
-  #path: ./image-concourse-pipeline/tasks/build-image-task.sh
-  path: ls
-  args: [-alR]
+  path: ./image-concourse-pipeline/tasks/build-image-task.sh
+  #path: ls
+  #args: [-alR]
