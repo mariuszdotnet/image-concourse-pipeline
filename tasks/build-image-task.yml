@@ -9,6 +9,7 @@ image_resource:
 
 inputs:
   - name: image-rhel7
+  - name: image-concourse-pipeline
 
 run:
   path: ./image-concourse-pipeline/tasks/build-image-task.sh
