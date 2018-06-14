@@ -1,4 +1,4 @@
-﻿cd "C:\git\manulife\image-concourse-pipeline"
+﻿Set-Location "C:\git\manulife\image-concourse-pipeline"
 
 # Remove and create containers
 docker-compose down
