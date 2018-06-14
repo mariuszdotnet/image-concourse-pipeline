@@ -1,11 +1,5 @@
 ---
 resources: 
-- name: image-rhel7
-  type: git
-  source:
-    uri: https://github.com/mariuszdotnet/image-rhel7.git
-    branch: master
-
 - name: image-concourse-pipeline
   type: git
   source:
@@ -17,7 +11,6 @@ jobs:
   public: true
   plan:
   - aggregate:
-    - get: image-rhel7
     - get: image-concourse-pipeline
   - task: build-image-task
     file: image-concourse-pipeline/tasks/build-image-task.yml
