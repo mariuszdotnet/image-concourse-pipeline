@@ -13,4 +13,4 @@ jobs:
   - aggregate:
     - get: image-concourse-pipeline
   - task: build-image-task
-    file: image-concourse-pipeline/build-image-task.yml
+    file: image-concourse-pipeline/tasks/build-image-task.yml
