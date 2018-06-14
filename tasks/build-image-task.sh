@@ -1,2 +1,3 @@
-echo 'List root directory content'
-ls -al
+#!/bin/sh
+
+uname -a
