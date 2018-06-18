@@ -22,7 +22,8 @@ git status
 echo 'Commit new manifest file'
 git config --global user.email "nobody@concourse-ci.org"
 git config --global user.name "Concourse"
-git add .
+git add manifest.json
+git status
 git commit -m "Published packer manifest file"
 git status
 
