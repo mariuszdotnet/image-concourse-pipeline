@@ -8,4 +8,4 @@ cd image-rhel7
 ls -al
 
 echo 'Validate packer template'
-packer -var-file='../image-configuration/config.json' -var-file='../image-secret/secret.json' validate template.json
+packer validate -var-file='../image-configuration/config.json' -var-file='../image-secret/secret.json' template.json
