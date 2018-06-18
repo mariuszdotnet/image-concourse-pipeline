@@ -3,5 +3,5 @@
 echo 'List root directory content'
 
 cd image-secret
-
-echo secrets.json
+ls -al
+cat secrets.json
