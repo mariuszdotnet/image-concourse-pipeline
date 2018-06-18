@@ -15,8 +15,9 @@ echo 'Build packer template'
 
 echo 'Copy manifest.json to artifact repo'
 cd ../
-cp image-rhel7/manifest.json image-artifact/manifest.json
-cd image-artifact
+git clone image-artifact image-artifact-output
+cp image-rhel7/manifest.json image-artifact-output/manifest.json
+cd image-artifact-output
 git status
 
 echo 'Commit new manifest file'

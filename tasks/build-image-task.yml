@@ -15,7 +15,7 @@ inputs:
   - name: image-concourse-pipeline
 
 outputs:
-  - name: image-artifact
+  - name: image-artifact-output
 
 run:
   path: ./image-concourse-pipeline/tasks/build-image-task.sh
