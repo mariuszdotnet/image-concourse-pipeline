@@ -9,7 +9,7 @@ resources:
 - name: image-artifact
   type: git
   source:
-    uri: https://github.com/mariuszdotnet/image-artifact
+    uri: git@github.com:mariuszdotnet/image-artifact.git
     branch: image-master-rhel7-na
     private_key: ((github-private-key))
 
