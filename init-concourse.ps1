@@ -12,7 +12,7 @@ fly --target develop sync
 fly -t develop set-pipeline -c pipeline.yml -p image-build -n -l .\secrets.yml
 
 # Destroy pipeline
-#fly -t develop destroy-pipeline -p image-build -n
+fly -t develop destroy-pipeline -p image-build -n
 
 # Check Resource
 #fly -t develop check-resource -r image-build/packer-templates
