@@ -24,3 +24,6 @@ git config --global user.email "nobody@concourse-ci.org"
 git config --global user.name "Concourse"
 git add .
 git commit -m "Published packer manifest file"
+git status
+
+echo 'Job completed!'
