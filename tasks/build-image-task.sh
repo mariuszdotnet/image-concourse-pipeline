@@ -1,7 +1,11 @@
 #!/bin/bash
 
-echo 'List root directory content'
+echo 'check packer version'
+packer -v
 
-cd image-secret
+echo 'Change to template directory'
+cd image-rhel7
 ls -al
-cat secrets.json
+
+echo 'Validate packer template'
+packer -var-file='../image-configuration/config.json' -var-file='../image-secret/secret.json' validate template.json
