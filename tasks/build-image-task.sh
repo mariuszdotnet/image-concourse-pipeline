@@ -15,9 +15,8 @@ echo 'Build packer template'
 
 echo 'Copy manifest.json to artifact repo'
 cd ../
-git clone image-artifact image-artifact-output
-cp image-rhel7/manifest.json image-artifact-output/manifest.json
-cd image-artifact-output
+cp image-rhel7/manifest.json image-artifact/manifest.json
+cd image-artifact
 git status
 
 echo 'Commit new manifest file'
@@ -26,6 +25,7 @@ git config --global user.name "Concourse"
 git add manifest.json
 git status
 git commit -m "Published packer manifest file"
+git push
 git status
 
 echo 'Job completed!'
