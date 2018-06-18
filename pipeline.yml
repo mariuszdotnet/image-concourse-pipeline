@@ -52,4 +52,4 @@ jobs:
     - get: image-secret
   - task: build-image-task
     file: image-concourse-pipeline/tasks/build-image-task.yml
-  - put: image-artifact
+  - put: image-artifact-output
