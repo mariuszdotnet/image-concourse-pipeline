@@ -2,4 +2,6 @@
 
 echo 'List root directory content'
 
-packer -v
+cd image-secret
+
+echo secrets.json
