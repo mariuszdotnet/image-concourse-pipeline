@@ -11,6 +11,7 @@ resources:
   source:
     uri: https://github.com/mariuszdotnet/image-artifact
     branch: master
+    private_key: ((github-private-key))
 
 - name: image-configuration
   type: git
