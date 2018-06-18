@@ -13,6 +13,13 @@ resources:
     branch: image-master-rhel7-na
     private_key: ((github-private-key))
 
+- name: image-artifact-output
+  type: git
+  source:
+    uri: https://github.com/mariuszdotnet/image-artifact
+    branch: image-master-rhel7-na
+    private_key: ((github-private-key))
+
 - name: image-configuration
   type: git
   source:
