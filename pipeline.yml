@@ -10,7 +10,7 @@ resources:
   type: git
   source:
     uri: https://github.com/mariuszdotnet/image-artifact
-    branch: master
+    branch: image-master-rhel7-na
     private_key: ((github-private-key))
 
 - name: image-configuration

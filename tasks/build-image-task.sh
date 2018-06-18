@@ -19,3 +19,8 @@ cp image-rhel7/manifest.json image-artifact/manifest.json
 cd image-artifact
 git status
 
+echo 'Commit new manifest file'
+git config --global user.email "nobody@concourse-ci.org"
+git config --global user.name "Concourse"
+git add .
+git commit -m "Published packer manifest file"
