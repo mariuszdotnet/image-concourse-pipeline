@@ -9,7 +9,7 @@ fly --target develop login --concourse-url http://127.0.0.1:8080
 fly --target develop sync
 
 # Create/Update the pipeline
-fly -t develop set-pipeline -c pipeline.yml -p image-build -n -l .\secrets.yml
+fly -t develop set-pipeline -c pipeline.yml -p image-build-rhel7 -n -l .\secrets.yml
 
 # Destroy pipeline
 fly -t develop destroy-pipeline -p image-build -n
